@@ -13,7 +13,7 @@
   },
   "plugins": [
     "react",
-    "@typescript-eslint",
+    //"@typescript-eslint",
     "react-hooks",
     "jsx-a11y"
   ],
@@ -39,4 +39,3 @@
     }
   }
 }
-

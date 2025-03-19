@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -26,12 +26,14 @@ const router = createBrowserRouter([
     }
 ]);
 
-
+export const AsteroidsContext = createContext()
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+        <AsteroidsContext.Provider value={"AsteroidsContext value"}>
         <RouterProvider router={router} />
+        </AsteroidsContext.Provider>
     </React.StrictMode>
 );
 

@@ -1,6 +1,16 @@
 import {Header} from "../components/Header/Header";
+import { useContext } from 'react';
+import { AsteroidsContext } from '../components/AsteroidCard/AsteroidsContext/AsteroidsContext';
 
 export const Destroyment = () => {
-    return <div><Header/>Destroyment page</div>
+
+    const contextValue = useContext(AsteroidsContext)
+
+    console.log("Destroyment",contextValue)
+
+
+    return <div>
+        <Header/>Destroyment page
+    </div>
 
 }

@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from 'react';
 import { Header } from "../components/Header/Header";
 import styles from "./Asteroid.module.css"; // CSS для страницы (обновите имена классов по необходимости)
 import { AsteroidCard } from "../components/AsteroidCard/AsteroidCard";
+import { AsteroidsContext } from '../components/AsteroidCard/AsteroidsContext/AsteroidsContext';
 
 export const Asteroids = () => {
     const [asteroids, setAsteroids] = useState([]);
-    const [onlyDangerous, setOnlyDangerous] = useState(false);
-    // true: показывать расстояние в километрах, false: расстояние до Луны
-    const [distanceMode, setDistanceMode] = useState(true);
+    const [onlyDangerous, setOnlyDangerous, setDistanceMode, distanceMode, addAsteroid] = useContext(AsteroidsContext);
 
     useEffect(() => {
         fetch("https://api.nasa.gov/neo/rest/v1/feed?start_date=2001-01-01&end_date=2001-01-07&api_key=SaRQo2rfouwLScnoFOZxwv73ra7tCk6XJpZ4wZDY")
@@ -100,8 +99,7 @@ export const Asteroids = () => {
                         distance={item.distance}
                         size={item.size}
                         isDangerous={item.isDangerous}
-                        distanceMode={distanceMode}
-                        onDestroy={() => handleDestroy(item.id)}
+                        distanceMode={item.distance}
                     />
                 ))}
             </div>

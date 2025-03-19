@@ -1,5 +1,5 @@
-import React, { FC, ReactNode, useState } from 'react';
-import { createContext } from 'react';
+import React, { FC, ReactNode, useState , createContext } from 'react';
+
 import { RouterProvider } from 'react-router-dom';
 
 export const AsteroidsContext = React.createContext(null);
@@ -13,7 +13,7 @@ export const AsteroidsContextProvider: FC<AsteroidsContextProviderProps> = ({
                                                                             }) => {
     const [onlyDangerous, setOnlyDangerous] = useState(false);
 
-    const [selectedDistance, setSelectedDistance] = useState(false);
+    const [distanceMode, setDistanceMode] = useState(true);
 
     const [destroyment, setDestroyment] = useState([]);
 
@@ -31,12 +31,12 @@ export const AsteroidsContextProvider: FC<AsteroidsContextProviderProps> = ({
     return (
         <AsteroidsContext.Provider
             value={{
-                onlyDangerous,
-                setOnlyDangerous,
-                selectedDistance,
-                setSelectedDistance,
-                addAsteroid,
-                destroyment,
+              onlyDangerous,
+              setOnlyDangerous,
+              distanceMode,
+              setDistanceMode,
+              addAsteroid,
+              destroyment,
             }}
         >
             {children}
