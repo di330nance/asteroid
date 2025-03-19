@@ -6,7 +6,7 @@ import { AsteroidsContext } from '../components/AsteroidCard/AsteroidsContext/As
 
 export const Asteroids = () => {
     const [asteroids, setAsteroids] = useState([]);
-    const [onlyDangerous, setOnlyDangerous, setDistanceMode, distanceMode, addAsteroid] = useContext(AsteroidsContext);
+    const {onlyDangerous, setOnlyDangerous, setDistanceMode, distanceMode, addAsteroid} = useContext(AsteroidsContext);
 
     useEffect(() => {
         fetch("https://api.nasa.gov/neo/rest/v1/feed?start_date=2001-01-01&end_date=2001-01-07&api_key=SaRQo2rfouwLScnoFOZxwv73ra7tCk6XJpZ4wZDY")
@@ -42,7 +42,6 @@ export const Asteroids = () => {
             });
     }, []);
 
-    // Функция для генерации тестовых данных при ошибке запроса
     const generateAsteroids = () => {
         const months = [
             "Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",

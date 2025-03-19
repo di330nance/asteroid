@@ -24,6 +24,8 @@ export const AsteroidCard = (props: AsteroidCardProps) => {
     const {distanceMode} = useContext(AsteroidsContext);
     const contextValue = useContext(AsteroidsContext)
 
+    const {addAsteroid} = useContext(AsteroidsContext)
+
     console.log(">>>>>>>",contextValue)
 
     return (
@@ -36,7 +38,7 @@ export const AsteroidCard = (props: AsteroidCardProps) => {
                 size={size}
                 isDangerous={isDangerous}
             />
-            <AsteroidCardAction isDangerous={isDangerous}  onClick={null}/>
+            <AsteroidCardAction isDangerous={isDangerous}  onClick={()=>addAsteroid(props)}/>
         </div>
     );
 };

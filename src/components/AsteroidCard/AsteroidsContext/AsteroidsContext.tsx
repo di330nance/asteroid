@@ -13,7 +13,7 @@ export const AsteroidsContextProvider: FC<AsteroidsContextProviderProps> = ({
                                                                             }) => {
     const [onlyDangerous, setOnlyDangerous] = useState(false);
 
-    const [distanceMode, setDistanceMode] = useState(true);
+    const [distanceMode, setDistanceMode] = useState(false);
 
     const [destroyment, setDestroyment] = useState([]);
 
