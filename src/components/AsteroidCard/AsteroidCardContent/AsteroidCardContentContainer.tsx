@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { AsteroidsContext } from '../AsteroidsContext/AsteroidsContext';
+import { AsteroidsContext } from '../AsteroidContext/AsteroidsContext';
 import { AsteroidCardContent } from './AsteroidCardContent';
 
 export const  AsteroidCardContentContainer = (props)=>{

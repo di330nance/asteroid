@@ -1,6 +1,6 @@
 import styles from './AsteroidCardContent.module.css';
 import { useContext } from 'react';
-import { AsteroidsContext } from '../AsteroidsContext/AsteroidsContext';
+import { AsteroidsContext } from '../AsteroidContext/AsteroidsContext';
 
 type AsteroidCardContentProps = {
   name: string;

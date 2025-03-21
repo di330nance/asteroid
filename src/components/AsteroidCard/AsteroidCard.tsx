@@ -4,7 +4,7 @@ import { AsteroidCardImage } from "./AsteroidCardImage/AsteroidCardImage";
 
 import styles from './AsteroidCard.module.css';
 import React, { useContext } from 'react';
-import { AsteroidsContext } from './AsteroidsContext/AsteroidsContext';
+import { AsteroidsContext } from './AsteroidContext/AsteroidsContext';
 import { AsteroidCardContentContainer } from './AsteroidCardContent/AsteroidCardContentContainer';
 
 type AsteroidCardProps = {

@@ -1,6 +1,6 @@
 import {Header} from "../components/Header/Header";
 import { useContext } from 'react';
-import { AsteroidsContext } from '../components/AsteroidCard/AsteroidsContext/AsteroidsContext';
+import { AsteroidsContext } from '../components/AsteroidCard/AsteroidContext/AsteroidsContext';
 import { Asteroids } from './Asteroids';
 import { AsteroidCard } from '../components/AsteroidCard/AsteroidCard';
 
@@ -13,7 +13,7 @@ export const Destroyment = () => {
 
     return <div>
         <Header/>
-        {Destroyment.map(item=><AsteroidCard key={item.id}{...item}/>)}
+        {destroyment.map(item=><AsteroidCard key={item.id}{...item}/>)}
     </div>
 
 }

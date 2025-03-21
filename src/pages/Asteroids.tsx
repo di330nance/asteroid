@@ -1,15 +1,16 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Header } from "../components/Header/Header";
+import { Header } from '../components/Header/Header';
 import styles from "./Asteroid.module.css"; // CSS для страницы (обновите имена классов по необходимости)
 import { AsteroidCard } from "../components/AsteroidCard/AsteroidCard";
-import { AsteroidsContext } from '../components/AsteroidCard/AsteroidsContext/AsteroidsContext';
+import { AsteroidsContext } from '../components/AsteroidCard/AsteroidContext/AsteroidsContext';
+import { getUserKey } from '../components/utils/getUserKey';
 
 export const Asteroids = () => {
     const [asteroids, setAsteroids] = useState([]);
     const {onlyDangerous, setOnlyDangerous, setDistanceMode, distanceMode, addAsteroid} = useContext(AsteroidsContext);
 
     useEffect(() => {
-        fetch("https://api.nasa.gov/neo/rest/v1/feed?start_date=2001-01-01&end_date=2001-01-07&api_key=SaRQo2rfouwLScnoFOZxwv73ra7tCk6XJpZ4wZDY")
+        fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=2001-01-01&end_date=2001-01-07&api_key=${getUserKey()}`)
             .then(res => res.json())
             .then(response => {
                 let rawAsteroids = [];
@@ -98,7 +99,7 @@ export const Asteroids = () => {
                         distance={item.distance}
                         size={item.size}
                         isDangerous={item.isDangerous}
-                        distanceMode={item.distance}
+                        distanceMode={distanceMode}
                     />
                 ))}
             </div>
