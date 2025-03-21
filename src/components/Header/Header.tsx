@@ -17,7 +17,7 @@ export const Header = memo(() => {
           </div>
         </div>
         <div>
-          <Link to={"/asteroids"} onClick={()=>console.log()}>Астероиды</Link>
+          <Link to={"/asteroids"} onClick={()=>console.log()}>Астероиды </Link>
           <Link to={"/destroyment"}>Уничтожение</Link>
         </div>
         <div>
