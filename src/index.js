@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { createHashRouter, RouterProvider, Navigate } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { Asteroid } from "./pages/Asteroid";
 import { Destroyment } from "./pages/Destroyment";
 import { Asteroids } from "./pages/Asteroids";
