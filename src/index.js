@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
+import { createHashRouter, RouterProvider, Navigate } from "react-router-dom";
 import { Asteroid } from "./pages/Asteroid";
 import { Destroyment } from "./pages/Destroyment";
 import { Asteroids } from "./pages/Asteroids";
 import { AsteroidsContextProvider } from './components/AsteroidCard/AsteroidContext/AsteroidsContext';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     { path: "/", element: <Navigate to="/asteroids" replace /> },
     { path: "/asteroids", element: <Asteroids /> },
     { path: "/destroyment", element: <Destroyment /> },
