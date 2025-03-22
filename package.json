@@ -2,7 +2,7 @@
   "name": "my-asteroid-app",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://github.com/di330nance/asteroid/",
+  "homepage": "http://github.com/di330nance/asteroid/",
   "dependencies": {
     "@eslint/js": "^9.22.0",
     "@testing-library/dom": "^10.4.0",
@@ -10,7 +10,6 @@
     "@types/node": "^22.13.10",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
-    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hooks": "^1.0.1",
@@ -24,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": " gh-pages -b gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -54,6 +53,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.2.0",
+    "gh-pages": "^6.3.0",
     "jest": "^27.5.1",
     "prettier": "3.5.3"
   }
