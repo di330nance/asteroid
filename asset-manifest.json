@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/di330nance/asteroid/static/css/main.b8fc0a16.css",
+    "main.js": "/di330nance/asteroid/static/js/main.84658a7e.js",
+    "static/js/453.964a3759.chunk.js": "/di330nance/asteroid/static/js/453.964a3759.chunk.js",
+    "index.html": "/di330nance/asteroid/index.html",
+    "main.b8fc0a16.css.map": "/di330nance/asteroid/static/css/main.b8fc0a16.css.map",
+    "main.84658a7e.js.map": "/di330nance/asteroid/static/js/main.84658a7e.js.map",
+    "453.964a3759.chunk.js.map": "/di330nance/asteroid/static/js/453.964a3759.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8fc0a16.css",
+    "static/js/main.84658a7e.js"
+  ]
+}
