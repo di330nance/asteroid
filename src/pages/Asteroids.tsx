@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Header } from '../components/Header/Header';
-import styles from "./Asteroid.module.css"; // CSS для страницы (обновите имена классов по необходимости)
+import styles from "./Asteroid.module.css";
 import { AsteroidCard } from "../components/AsteroidCard/AsteroidCard";
 import { AsteroidsContext } from '../components/AsteroidCard/AsteroidContext/AsteroidsContext';
 import { getUserKey } from '../components/utils/getUserKey';

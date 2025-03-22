@@ -26,11 +26,9 @@ export const AsteroidCard = (props: AsteroidCardProps) => {
 
     const {addAsteroid} = useContext(AsteroidsContext)
 
-    console.log(">>>>>>>",contextValue)
-
     return (
         <div className={`${styles.card} ${isDangerous ? styles.cardRed : styles.normCard}`}>
-            <AsteroidCardImage />
+            <AsteroidCardImage size={size}/>
             <AsteroidCardContentContainer
                 name={name}
                 date={date}

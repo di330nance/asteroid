@@ -1,11 +1,18 @@
 import React from "react";
 
 export function Button() {
-    const test = "test";
+    const test = "test"
 
-    const handleClick = () => {
-        console.log("click", test);
-    };
+    return <button onClick={()=>{
+        click(test);
+    }}>Custom button</button>
+}
 
-    return <button onClick={handleClick}>Just button</button>;
+function click(test){
+    console.log("click")
+}
+
+
+function hello(){
+    console.log("hello")
 }
