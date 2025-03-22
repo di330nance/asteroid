@@ -2,6 +2,7 @@
   "name": "my-asteroid-app",
   "version": "1.0.0",
   "private": true,
+  "homepage": "http://di330nance.github.io/asteroid",
   "dependencies": {
     "@eslint/js": "^9.22.0",
     "@testing-library/dom": "^10.4.0",
