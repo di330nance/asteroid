@@ -1,8 +1,5 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import './Filters.css';
-
-// Если нужно использовать контекст, можно создать его в отдельном файле.
-// Здесь для упрощения сделаем локальное состояние.
 
 function Filters() {
     const [showOnlyDangerous, setShowOnlyDangerous] = useState(false);
@@ -15,44 +12,44 @@ function Filters() {
 
     const handleUnitChange = (e) => {
         setDistanceUnit(e.target.value);
-        // Аналогично передать выбранную единицу
+        // Аналогично передать выбранную единицу дальше
     };
 
     return (
-        <div className="filters-container">
-            <label className="dangerous-filter">
-                <input
-                    type="checkbox"
-                    checked={showOnlyDangerous}
-                    onChange={handleDangerousChange}
-                />
-                Показать только опасные
-            </label>
+      <div className="filters-container">
+          <label className="dangerous-filter">
+              <input
+                type="checkbox"
+                checked={showOnlyDangerous}
+                onChange={handleDangerousChange}
+              />
+              Показать только опасные
+          </label>
 
-            <div className="distance-unit">
-                <span>Расстояние: </span>
-                <label>
-                    <input
-                        type="radio"
-                        name="distanceUnit"
-                        value="km"
-                        checked={distanceUnit === 'km'}
-                        onChange={handleUnitChange}
-                    />
-                    в километрах
-                </label>
-                <label>
-                    <input
-                        type="radio"
-                        name="distanceUnit"
-                        value="lunar"
-                        checked={distanceUnit === 'lunar'}
-                        onChange={handleUnitChange}
-                    />
-                    в дистанциях до Луны
-                </label>
-            </div>
-        </div>
+          <div className="distance-unit">
+              <span>Расстояние:</span>
+              <label>
+                  <input
+                    type="radio"
+                    name="distanceUnit"
+                    value="km"
+                    checked={distanceUnit === 'km'}
+                    onChange={handleUnitChange}
+                  />
+                  в километрах
+              </label>
+              <label>
+                  <input
+                    type="radio"
+                    name="distanceUnit"
+                    value="lunar"
+                    checked={distanceUnit === 'lunar'}
+                    onChange={handleUnitChange}
+                  />
+                  в дистанциях до Луны
+              </label>
+          </div>
+      </div>
     );
 }
 

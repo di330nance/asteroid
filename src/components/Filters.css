@@ -2,13 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin: 16px auto;      /* Центрирование, как у карточек */
+    width: 80%;             /* То же значение, что и у карточек */
     background-color: #fff;
     padding: 10px;
     border: 1px solid #ddd;
 }
 
 .dangerous-filter {
+    display: flex;          /* Выстраивает чекбокс и текст в строку */
+    align-items: center;    /* Вертикальное выравнивание по центру */
     font-size: 14px;
 }
 
@@ -19,3 +22,4 @@
 .distance-unit label {
     margin-left: 10px;
 }
+

@@ -12,6 +12,7 @@
     margin: 16px auto;
     padding: 20px;
     font-family: Roboto, sans-serif;
+    overflow: hidden;
 }
 
 /* Стиль для неопасных астероидов */

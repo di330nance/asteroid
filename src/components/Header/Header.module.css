@@ -1,10 +1,53 @@
+/* Обёртка для всего хедера */
 .container {
-    width: 80%;
-    margin: 0 auto;
+    max-width: 1200px;         /* Ширина контейнера */
+    margin: 0 auto;            /* Центрирование по горизонтали */
+    padding: 20px 16px;        /* Внутренние отступы сверху/снизу и слева/справа */
+    display: flex;             /* Флекс-контейнер для удобного выстраивания блоков */
+    align-items: center;       /* Вертикальное выравнивание по центру */
+    justify-content: space-between; /* Горизонтальное распределение блоков по краям */
+    font-family: Roboto, sans-serif; /* Пример шрифта */
+}
+
+/* Левый блок: заголовок и описание */
+.leftBlock {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    font-family: Helvetica, sans-serif;
+    flex-direction: column;    /* Расположение текста по вертикали */
+}
+
+/* Заголовок */
+.leftBlock h1 {
+    margin: 0;                 /* Убираем отступы по умолчанию */
+    font-size: 32px;           /* Размер шрифта */
+    font-weight: bold;
+}
+
+/* Подзаголовок/описание */
+.leftBlock .subtitle {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;               /* Пример более тёмно-серого */
+}
+
+/* Блок со ссылками */
+.navLinks {
+    display: flex;
+    gap: 20px;                 /* Расстояние между ссылками */
+}
+
+/* Стили самих ссылок */
+.navLinks a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navLinks a:hover {
+    text-decoration: underline;
+}
+
+/* Правый блок (например, для кнопки или поля ввода ключа) */
+.rightBlock {
+
 }
