@@ -8,6 +8,8 @@ export const Destroyment = () => {
 
     const contextValue = useContext(AsteroidsContext)
     const {destroyment} = useContext(AsteroidsContext)
+    console.log("Выбранные астероиды на уничтожение:", destroyment);
+
 
 
 

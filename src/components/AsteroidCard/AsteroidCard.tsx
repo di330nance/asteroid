@@ -9,6 +9,7 @@ import { AsteroidCardContentContainer } from './AsteroidCardContent/AsteroidCard
 import { AsteroidCardDinoImage } from './AsteroidCardDino/DinoImage';
 
 type AsteroidCardProps = {
+    id: string;
     name: string;
     date: string;
     distance: {

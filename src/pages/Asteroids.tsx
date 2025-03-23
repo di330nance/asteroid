@@ -94,6 +94,7 @@ export const Asteroids = () => {
                 {filteredAsteroids.map(item => (
                     <AsteroidCard
                         key={item.id}
+                        id={item.id}
                         name={item.name}
                         date={item.date}
                         distance={item.distance}
