@@ -76,7 +76,7 @@ export const Asteroids = () => {
             <div className={styles.showDangerousOnly}>
                 <input
                     type="checkbox"
-                    checked={onlyDangerous}
+                    checked={onlyDangerous} // Показать только опасные
                     onChange={() => setOnlyDangerous(!onlyDangerous)}
                 />
                 Показать только опасные
