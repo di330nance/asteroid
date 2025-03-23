@@ -61,7 +61,7 @@ export const Asteroids = () => {
         return result;
     };
 
-    // Обработчик удаления астероида (например, для корзины)
+    // Обработчик удаления астероида
     const handleDestroy = (id) => {
         setAsteroids(prev => prev.filter(item => item.id !== id));
     };
