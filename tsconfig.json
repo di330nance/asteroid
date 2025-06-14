@@ -4,13 +4,13 @@
     "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx",
     "module": "esnext",
-    "typeRoots": ["./node_modules/@types", "./src"],
+    "typeRoots": ["./node_modules/@types"],
     "moduleResolution": "node",
     "lib": [
       "dom",
       "esnext"
     ],
-    "target": "esnext",
+    "target": "esnext"
 
   },
 
